@@ -10,33 +10,43 @@ function Hero() {
         flexWrap: 'wrap',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: '50px',
-        gap: '30px'
+        padding: '40px 30px',
+        gap: '30px',
+        width: '100%',
+        boxSizing: 'border-box'
       }}
     >
 
       {/* TEXT */}
-      <div style={{
-        color: 'white',
-        flex: '1 1 400px'
-      }}>
+      <div
+        style={{
+          color: 'white',
+          flex: '1 1 280px',
+          minWidth: 0
+        }}
+      >
 
-        <h1>HI! I'M KEIFFER</h1>
+        <h1 style={{ fontSize: '42px' }}>
+          HI! I'M KEIFFER
+        </h1>
 
         <h2 style={{ color: '#e63946' }}>
           WEB DESIGNER
         </h2>
 
-        <p>
+        <p style={{ fontSize: '20px' }}>
           In Team Cherry a small indie games team
           in Adelaide, South Australia.
         </p>
 
-        <div style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: '20px'
-        }}>
+        {/* BUTTONS */}
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '20px'
+          }}
+        >
 
           <a
             href="#about"
@@ -70,18 +80,22 @@ function Hero() {
 
 
       {/* IMAGE */}
-      <div style={{
-        flex: '1 1 300px',
-        display: 'flex',
-        justifyContent: 'center'
-      }}>
+      <div
+        style={{
+          flex: '1 1 250px',
+          minWidth: 0,
+          display: 'flex',
+          justifyContent: 'center'
+        }}
+      >
 
         <img
           src="/boss_lace.png"
           alt="Character"
           style={{
-            maxWidth: '100%',
-            width: '400px'
+            width: '100%',
+            maxWidth: '350px',
+            height: 'auto'
           }}
         />
 
